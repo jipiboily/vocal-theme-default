@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Opinionated</title>
+  <%= stylesheet_link_tag    "opinionated/application", media: "all" %>
+  <%= javascript_include_tag "opinionated/application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div id="main-container">
+    <header>
+      <h1><a href="/">Welcome to my blog</a></h1>
+    </header>
+
+    <div id="content">
+      <%= yield %>
+    </div>
+  </div>
+
+</body>
+</html>

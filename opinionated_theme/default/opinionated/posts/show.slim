@@ -1,0 +1,4 @@
+.post
+  h1= @post.title
+  p Written by #{@post.user.name}, published on #{@post.published_at}
+  =raw @post.html
