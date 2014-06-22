@@ -1,3 +1,5 @@
 li
+  span.published_at #{post.published_at}
   h2 =link_to post.title, post.url
-  p Written by #{post.user.name}, published on #{post.published_at}
+  - content = strip_tags(post.html)
+  p= content[0..400] + ( content.length > 400 ? '...' : '')

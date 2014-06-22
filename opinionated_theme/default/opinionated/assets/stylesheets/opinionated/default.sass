@@ -3,11 +3,63 @@ body
   padding: 0
   margin: 0
 
+p, a, h1, h2, h3, h4, h5, h6
+  color: #555
+  // font-family: Seravek
+  // font-family: Baskerville
+  // font-family: Didot
+  font-family: Roboto Slab
+  margin: 0
+  padding: 0
+
+h1, h2, h3, h4, h5, h6
+  // font-family: Noteworthy
+  margin: 10px 0 10px 0
+  a
+    font-family: Noteworthy
+    // font-family: Roboto
+
+h1
+  font-size: 70px
+  margin: 5px
+  padding: 0
+
+h2
+  font-size: 30px
+
+header
+  margin: 0
+  display: inline-block
+  height: 400px
+  width: 100%
+  margin: -5px 0
+  padding: 0
+  background: url(/assets/opinionated/speaking.jpg) no-repeat center
+  background-size: cover
+  background-position: 0 -230px
+  a
+    text-decoration: none
+    color: white
+
+  h1
+    text-align: center
+    margin: 140px 0
+
 #main-container
-  // background-color: red
   width: 80%
   margin: auto
   padding: 5px
 
-  header
-    text-align: center
+  .posts
+    li
+      list-style: none
+      margin: 20px 0 40px 0
+      .published_at
+        float: left
+        font-size: 20px
+        font-family: Noteworthy
+        margin: 13px 0 0 -150px
+      h2
+        text-align: center
+        a
+          text-decoration: none
