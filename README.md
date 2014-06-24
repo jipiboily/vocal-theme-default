@@ -1,4 +1,4 @@
-# Opinionated::Theme::Default
+# Opinionated's default theme
 
 This is the default theme for [Opinionated](https://github.com/jipiboily/opinionated).
 
