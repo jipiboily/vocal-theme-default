@@ -1,5 +1,8 @@
 li
-  span.published_at #{post.published_at}
+  span.published_at #{post.published_at.to_formatted_s(:long)}
   h2 =link_to post.title, post.url
+  .published_at_small #{post.published_at.to_formatted_s(:long)} - #{post.user.name}
   - content = strip_tags(post.html)
-  p= content[0..400] + ( content.length > 400 ? '...' : '')
+
+  p
+    = content[0..400] + ( content.length > 400 ? '...' : '')
