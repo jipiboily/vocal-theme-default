@@ -1,3 +1,4 @@
+require "truncate_html"
 require "opinionated/theme/default/version"
 
 module Opinionated
