@@ -1,9 +1,8 @@
 li.post
-  .meta
-    span.published_at #{post.published_at.to_formatted_s(:long)}
+  = render partial: 'opinionated/posts/shared/meta_over', locals: { post: post }
   h2 =link_to post.title, post.url
-  .published_at_small #{post.published_at.to_formatted_s(:long)} - #{post.user.name}
-  - content = strip_tags(post.html)
+  = render partial: 'opinionated/posts/shared/meta_under', locals: { post: post }
 
+  - content = strip_tags(post.html)
   p
     = truncate_html(post.html, length: 400, omission: '...')

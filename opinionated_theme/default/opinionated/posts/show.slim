@@ -1,7 +1,6 @@
 .post
-  span.meta
-    span.published_at #{@post.published_at.to_formatted_s(:long)}
+  = render partial: 'opinionated/posts/shared/meta_over', locals: { post: @post }
   h1 =link_to @post.title, @post.url
-  .published_at_small #{@post.published_at.to_formatted_s(:long)} - #{@post.user.name}
+  = render partial: 'opinionated/posts/shared/meta_under', locals: { post: @post }
 
   =raw @post.html
