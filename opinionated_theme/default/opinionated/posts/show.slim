@@ -1,4 +1,7 @@
 .post
-  h1= @post.title
-  p Written by #{@post.user.name}, published on #{@post.published_at}
+  span.meta
+    span.published_at #{@post.published_at.to_formatted_s(:long)}
+  h1 =link_to @post.title, @post.url
+  .published_at_small #{@post.published_at.to_formatted_s(:long)} - #{@post.user.name}
+
   =raw @post.html
