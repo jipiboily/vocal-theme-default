@@ -1,4 +1,4 @@
-module Opinionated
+module Vocal
   module Theme
     module Default
       VERSION = "0.0.1"

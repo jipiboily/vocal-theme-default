@@ -1,6 +1,0 @@
-.post
-  = render partial: 'opinionated/posts/shared/meta_over', locals: { post: @post }
-  h1 =link_to @post.title, @post.url
-  = render partial: 'opinionated/posts/shared/meta_under', locals: { post: @post }
-
-  =raw @post.html

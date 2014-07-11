@@ -1,7 +1,7 @@
 require "truncate_html"
-require "opinionated/theme/default/version"
+require "vocal/theme/default/version"
 
-module Opinionated
+module Vocal
   module Theme
     module Default
       # Your code goes here...

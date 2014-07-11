@@ -1,8 +1,0 @@
-li.post
-  = render partial: 'opinionated/posts/shared/meta_over', locals: { post: post }
-  h2 =link_to post.title, post.url
-  = render partial: 'opinionated/posts/shared/meta_under', locals: { post: post }
-
-  - content = strip_tags(post.html)
-  p
-    = truncate_html(post.html, length: 400, omission: '...')
