@@ -1,2 +1,4 @@
 span.meta
   span.published_at #{post.published_at.to_formatted_s(:long)}
+  span.comments
+    = render partial: 'vocal/shared/disqus_comment_count', locals: { post: post }

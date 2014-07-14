@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Vocal</title>
-  <%= stylesheet_link_tag    "vocal/application", media: "all" %>
-  <%= javascript_include_tag "vocal/application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <header>
-    <h1><a href="/">JP Boily. I do web stuff.</a></h1>
-  </header>
+  <head>
+    <title>Vocal</title>
+    <%= stylesheet_link_tag    "vocal/application", media: "all" %>
+    <%= javascript_include_tag "vocal/application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">JP Boily. I do web stuff.</a></h1>
+    </header>
 
-  <div id="main-container">
-    <div id="content">
-      <%= yield %>
+    <div id="main-container">
+      <div id="content">
+        <%= yield %>
+      </div>
     </div>
-  </div>
 
-</body>
+  <%= render partial: 'vocal/shared/disqus_js' %>
+  </body>
 </html>

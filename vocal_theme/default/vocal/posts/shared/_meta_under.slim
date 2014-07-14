@@ -1,1 +1,3 @@
-.published_at_small #{post.published_at.to_formatted_s(:long)} - #{post.user.name}
+.meta-small
+  span.published_at_small #{post.published_at.to_formatted_s(:long)} - #{post.user.name} -&nbsp;
+  = render partial: 'vocal/shared/disqus_comment_count', locals: { post: post }
