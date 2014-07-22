@@ -4,4 +4,9 @@
   = render partial: 'vocal/posts/shared/meta_under', locals: { post: @post }
 
   =raw @post.html
+  h3 You loved that? Share this post:
+  ul.social-share
+    li.twitter= render partial: 'vocal/shared/twitter_tweet_button'
+    li.facebook= render partial: 'vocal/shared/facebook_like'
+    li.gplus= render partial: 'vocal/shared/google_plus'
   = render partial: 'vocal/shared/disqus_comments'
