@@ -1,5 +1,6 @@
 require "truncate_html"
 require "vocal/theme/default/version"
+require 'foundation-icons-sass-rails'
 
 module Vocal
   module Theme

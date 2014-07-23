@@ -15,7 +15,11 @@ And then execute:
 Finally, set it as the current theme. To do so, in your Vocal initializer, set:
 
 ```ruby
-Vocal.config.theme = 'default'
+Vocal.config.theme.name = 'default'
+Vocal.config.theme.default.github_url = 'https://github.com/jipiboily'
+Vocal.config.theme.default.twitter_url = 'https://twitter.com/jipiboily'
+Vocal.config.theme.default.linked_in_url = 'https://www.linkedin.com/in/jipiboily'
+Vocal.config.theme.default.google_plus_url = 'https://plus.google.com/+JeanPhilippeBoily'
 ```
 
 ## Contributing

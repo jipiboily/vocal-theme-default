@@ -12,6 +12,29 @@
   </head>
   <body>
     <header>
+      <div class='social-links'>
+        <% if Vocal.config.theme.default.has_key?(:github_url) %>
+          <a href="<%= Vocal.config.theme.default.github_url %>">
+            <i class="fi-social-github"></i>
+          </a>
+        <% end %>
+        <% if Vocal.config.theme.default.has_key?(:twitter_url) %>
+          <a href="<%= Vocal.config.theme.default.twitter_url %>">
+            <i class="fi-social-twitter"></i>
+          </a>
+        <% end %>
+        <% if Vocal.config.theme.default.has_key?(:linked_in_url) %>
+          <a href="<%= Vocal.config.theme.default.linked_in_url %>">
+            <i class="fi-social-linkedin"></i>
+          </a>
+        <% end %>
+        <% if Vocal.config.theme.default.has_key?(:google_plus_url) %>
+          <a href="<%= Vocal.config.theme.default.google_plus_url %>">
+            <i class="fi-social-google-plus"></i>
+          </a>
+        <% end %>
+      </div>
+
       <h1><a href="/"><%= Vocal.config.meta.title %></a></h1>
     </header>
 
