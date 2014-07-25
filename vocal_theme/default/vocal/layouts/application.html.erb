@@ -12,6 +12,12 @@
   </head>
   <body>
     <header>
+      <div class='rss'>
+        <%= link_to feed_url do %>
+          <i class="fi-rss"></i>
+        <% end %>
+      </div>
+
       <div class='social-links'>
         <% if Vocal.config.theme.default.has_key?(:github_url) %>
           <a href="<%= Vocal.config.theme.default.github_url %>">
