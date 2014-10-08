@@ -4,5 +4,5 @@ li.post
   = render partial: 'vocal/posts/shared/meta_under', locals: { post: post }
 
   - content = strip_tags(post.html)
-  - href = "... #{link_to('(continue)', post, class: 'read-full')}"
-  = truncate_html(post.html, length: 400, omission: href)
+  - href = "... #{link_to('(continue)', post.url, class: 'read-full')}"
+  = raw HTML_Truncator.truncate(post.html, 600, :length_in_chars => true, :ellipsis => href)

@@ -1,4 +1,4 @@
-require "truncate_html"
+require "html_truncator"
 require "vocal/theme/default/version"
 require 'foundation-icons-sass-rails'
 
