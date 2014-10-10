@@ -39,6 +39,22 @@
     padding: 0.2em
     color: black
 
+  ////////////////////////////////////////////////
+  // Edge cases for lists with code blocks
+  ////////////////////////////////////////////////
+
+  li pre code
+    font-size: 1em
+
+  // This happens when there are code blocks in list items, the text prior to the code block is in a "p"
+  li p
+    font-size: 1em
+
+  ////////////////////////////////////////////////
+  // End of the edge cases
+  ////////////////////////////////////////////////
+
+
   @media (min-width: 1370px)
     .meta
       float: right
