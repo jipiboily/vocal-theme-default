@@ -1,8 +1,9 @@
 li.post
-  = render partial: 'vocal/posts/shared/meta_over', locals: { post: post }
-  h2 =link_to post.title, post.url
-  = render partial: 'vocal/posts/shared/meta_under', locals: { post: post }
+  article
+    = render partial: 'vocal/posts/shared/meta_over', locals: { post: post }
+    h1 =link_to post.title, post.url
+    = render partial: 'vocal/posts/shared/meta_under', locals: { post: post }
 
-  - content = strip_tags(post.html)
-  - href = "... #{link_to('(continue)', post.url, class: 'read-full')}"
-  = raw HTML_Truncator.truncate(post.html, 600, :length_in_chars => true, :ellipsis => href)
+    - content = strip_tags(post.html)
+    - href = "... #{link_to('(continue)', post.url, class: 'read-full')}"
+    = raw HTML_Truncator.truncate(post.html, 600, :length_in_chars => true, :ellipsis => href)
