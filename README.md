@@ -22,6 +22,15 @@ Vocal.config.theme.default.linked_in_url = 'https://www.linkedin.com/in/jipiboil
 Vocal.config.theme.default.google_plus_url = 'https://plus.google.com/+JeanPhilippeBoily'
 ```
 
+## Customization
+
+You want to customize a few small things? Sure! You can add your own CSS (SASS in fact) or JavaScript (CoffeeScript in fact) by placing those files in your app, they will be picked up by the theme automatically:
+
+- `app/assets/javascripts/vocal/customization.coffee`
+- `app/assets/stylesheets/vocal/customization.sass`
+
+You need something more fancy? You can override any files from this theme, using **the exact same path**, use [Deface](http://rubygems.org/gems/deface) or fork the theme and customize it any way you want.
+
 ## Contributing
 
 1. Fork it ( https://github.com/jipiboily/vocal-theme-default/fork )
