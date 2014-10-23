@@ -29,7 +29,7 @@ You want to customize a few small things? Sure! You can add your own CSS (SASS i
 - `app/assets/javascripts/vocal/customization.coffee`
 - `app/assets/stylesheets/vocal/customization.sass`
 
-You need something more fancy? You can override any files from this theme, using **the exact same path**, use [Deface](http://rubygems.org/gems/deface) or fork the theme and customize it any way you want.
+You need something more fancy? You can override any files from this theme, using **the exact same path**, use [Deface](http://rubygems.org/gems/deface) or fork the theme and customize it any way you want. For details on how to use Deface with Vocal, see [Vocal's README](https://github.com/jipiboily/vocal#customizing-with-deface).
 
 ## Contributing
 
