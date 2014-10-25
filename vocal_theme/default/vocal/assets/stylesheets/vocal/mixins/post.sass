@@ -24,6 +24,10 @@
   li
     font-size: 2em
 
+  // Nested lists should have the same size
+  li li
+    font-size: 1em
+
   ul.social-share
     list-style-type: none
     li
@@ -48,6 +52,10 @@
 
   li pre code
     font-size: 1em
+
+  // Code blocks in nested lists should have the same size than anywhere else
+  li li pre code
+    font-size: 0.8em
 
   // This happens when there are code blocks in list items, the text prior to the code block is in a "p"
   li p
